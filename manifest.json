@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Remove adblock modal ed",
+  "short_name": "Remove adblock modal ed",
+  "version": "0.0.0.1",
+  "description": "Remove adblock modal ed",
+  "author": "Edgard Kozlowski <hello@edkf.com.br> (http://edkf.com.br)",
+  "commands": {
+  "_execute_browser_action": {}
+  },
+  "content_scripts": [
+      {
+        "matches": ["https://vejario.abril.com.br/*", "https://oglobo.globo.com/"], 
+        "js": ["scripts/main.js"],
+        "css" : ["styles/main.css"]
+      }
+  ],
+  "permissions": [ "tabs", "https://oglobo.globo.com/*"]
+}

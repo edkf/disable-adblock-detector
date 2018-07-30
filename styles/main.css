@@ -1,0 +1,14 @@
+body {
+  overflow: auto !important;
+}
+
+.tp-modal,
+.tp-backdrop,
+.backdrop-adblock,
+.modal-adblock  {
+  display: none !important;
+}
+
+.tp-modal-open {
+  overflow: auto !important;
+}
