@@ -1,18 +1,32 @@
 {
   "manifest_version": 2,
-  "name": "Remove adblock modal ed",
-  "short_name": "Remove adblock modal ed",
-  "version": "0.0.0.1",
-  "description": "Remove adblock modal ed",
+  "name": "Disable Adblock Detector",
+  "short_name": "Disable Adblock Detector",
+  "version": "1.0",
+  "description": "Remove boring modals asking you to disable your Adblock. 🙄",
   "author": "Edgard Kozlowski <hello@edkf.com.br> (http://edkf.com.br)",
   "commands": {
   "_execute_browser_action": {}
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "24": "icons/icon-24.png",
+      "32": "icons/icon-32.png"
+    },
+    "default_popup": "index.html"
   },
   "content_scripts": [
       {
         "matches": [
           "https://*.abril.com.br/*",
-          "https://oglobo.globo.com/*"
+          "https://*.globo.com/*"
         ], 
         "js": ["scripts/main.js"],
         "css" : ["styles/main.css"]
