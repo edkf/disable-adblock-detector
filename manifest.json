@@ -10,10 +10,14 @@
   },
   "content_scripts": [
       {
-        "matches": ["https://vejario.abril.com.br/*", "https://oglobo.globo.com/"], 
+        "matches": [
+          "https://super.abril.com.br/*",
+          "https://vejario.abril.com.br/*",
+          "https://oglobo.globo.com/*"
+        ], 
         "js": ["scripts/main.js"],
         "css" : ["styles/main.css"]
       }
   ],
-  "permissions": [ "tabs", "https://oglobo.globo.com/*"]
+  "permissions": [ "tabs"]
 }
