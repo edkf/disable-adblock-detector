@@ -11,6 +11,7 @@
   "content_scripts": [
       {
         "matches": [
+          "https://capricho.abril.com.br/*",
           "https://super.abril.com.br/*",
           "https://vejario.abril.com.br/*",
           "https://oglobo.globo.com/*"
